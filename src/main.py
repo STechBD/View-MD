@@ -1,6 +1,20 @@
+# Project: View MD
+# Description: View MD is a simple tool to view markdown files in windows.
+# Version: 1.0.0
+# Version Code: 1
+# Since: 1.0.0
+# Author: Md. Ashraful Alam Shemul
+# Email: ceo@stechbd.net
+# Website: https://www.stechbd.net/project/View-MD/
+# Developer: S Technologies
+# Homepage: https://www.stechbd.net
+# Contact: product@stechbd.net
+# Created: August 17, 2020
+# Updated: August 17, 2023
+
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget, QPushButton, QFileDialog
-from PyQt5.QtWebEngineWidgets import QWebEngineView
+from PyQt6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget, QPushButton, QFileDialog
+from PyQt6.QtWebEngineWidgets import QWebEngineView
 import mistune
 
 
@@ -29,9 +43,7 @@ class HTMLViewer(QMainWindow):
         self.open_button.clicked.connect(self.open_md_file)
 
     def open_md_file(self):
-        options = QFileDialog.Options()
-        options |= QFileDialog.ReadOnly
-        file_name, _ = QFileDialog.getOpenFileName(self, "Open .md File", "", "Markdown Files (*.md)", options=options)
+        file_name, _ = QFileDialog.getOpenFileName(self, "Open .md File", "", "Markdown Files (*.md)")
 
         if file_name:
             with open(file_name, "r", encoding="utf-8") as f:
@@ -47,4 +59,4 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     viewer = HTMLViewer()
     viewer.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
