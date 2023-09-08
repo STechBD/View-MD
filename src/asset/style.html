@@ -1,0 +1,108 @@
+<!--
+ # Project: View MD
+ # Description: View MD is a simple tool to view markdown files in windows.
+ # Version: 1.0.0
+ # Version Code: 1
+ # Since: 1.0.0
+ # Author: Md. Ashraful Alam Shemul
+ # Email: ceo@stechbd.net
+ # Website: https://www.stechbd.net/project/View-MD/
+ # Developer: S Technologies
+ # Homepage: https://www.stechbd.net
+ # Contact: product@stechbd.net
+ # Created: August 17, 2020
+ # Updated: August 17, 2023
+-->
+
+<style>
+	body {
+		display: grid;
+	}
+
+	main {
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+		background-color: white;
+		margin: 20px;
+		border: 1px solid #D0D7DE;
+		border-radius: 10px;
+		/*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+	}
+
+	main .title {
+		border-bottom: 1px solid #D0D7DE;
+		padding: 10px 30px;
+	}
+
+	main .title * {
+		margin-right: 5px;
+	}
+
+	main .content {
+		padding: 0 30px 10px 30px;
+	}
+
+	main > .content h1, main > .content h2, main > .content h3, main > .content h4, main > .content h5, main > .content h6 {
+		border-bottom: 1px solid #D0D7DE;
+		padding-bottom: 10px;
+		margin-top: 30px;
+	}
+
+	main > .content a:link, main > .content a:visited {
+		color: #218BFF;
+		text-decoration: none;
+	}
+
+	main > .content a:hover {
+		text-decoration: underline;
+	}
+
+	main > .content pre {
+		background-color: #F6F8FA;
+		padding: 15px;
+		border-radius: 5px;
+	}
+
+	@media only-screen and (min-width: 768px) {
+		aside {
+			display: block;
+		}
+	}
+</style>
+
+<!-- Path: STechBD\View-MD\src\asset\script.html -->
+
+<main>
+	<div class="title">
+		<svg aria-hidden="true" height="16" viewBox="0 0 16 16" width="16" data-view-component="true">
+			<path d="M5.75 2.5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5Zm0 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5Zm0 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5ZM2 14a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm1-6a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM2 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
+		</svg>
+		<span><strong>README.md</strong></span>
+	</div>
+	<div class="content">
+		<h1>View MD</h1>
+		<p><strong>View MD</strong> is a simple tool to view markdown files in windows.</p>
+		<h2>Table of Contents</h2>
+		<ul>
+			<li><a href="#general-info">General info</a></li>
+			<li><a href="#technologies">Technologies</a></li>
+			<li><a href="#setup">Setup</a></li>
+			<li><a href="#how-to-use">How to use</a></li>
+			<li><a href="#features">Features</a></li>
+			<li><a href="#status">Status</a></li>
+			<li><a href="#sources">Sources</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#license">License</a></li>
+			<li><a href="#screenshots">Screenshots</a></li>
+			<li><a href="#credits">Credits</a></li>
+			<li><a href="#inspiration">Inspiration</a></li>
+			<li><a href="#author">Author</a></li>
+			<li><a href="#contributing">Contributing</a></li>
+		</ul>
+		<h2>General info</h2>
+		<p><strong>View MD</strong> is a simple tool to view markdown files in windows.</p>
+		<pre>
+# Development
+$ npm run dev
+		</pre>
+	</div>
+</main>

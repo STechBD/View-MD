@@ -4,7 +4,7 @@
 
 ## Table of Contents
 
-* [General info](#general-info)
+* [General Info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [How to use](#how-to-use)
@@ -19,6 +19,6 @@
 * [Author](#author)
 * [Contributing](#contributing)
 
-## General info
+## General Info
 
 **View MD** is a simple tool to view markdown files in windows.
